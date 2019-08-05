@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		620FD4CE22F397F000AC96F8 /* ProfileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 620FD4CD22F397F000AC96F8 /* ProfileDetailViewController.m */; };
+		624BBEDE22F35738000A754A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 624BBEDD22F35738000A754A /* AppDelegate.m */; };
+		624BBEE422F35739000A754A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624BBEE222F35739000A754A /* Main.storyboard */; };
+		624BBEE622F35742000A754A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624BBEE522F35742000A754A /* Assets.xcassets */; };
+		624BBEE922F35742000A754A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624BBEE722F35742000A754A /* LaunchScreen.storyboard */; };
+		624BBEEC22F35742000A754A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 624BBEEB22F35742000A754A /* main.m */; };
+		624BBEF422F35B4F000A754A /* ProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 624BBEF322F35B4F000A754A /* ProfileTableViewController.m */; };
+		624BBF0022F36FA1000A754A /* UserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 624BBEFF22F36FA1000A754A /* UserProfile.m */; };
+		62508ECC22F8B0420038CF16 /* ProfileSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62508ECB22F8B0420038CF16 /* ProfileSearchViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		620FD4CC22F397F000AC96F8 /* ProfileDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileDetailViewController.h; sourceTree = "<group>"; };
+		620FD4CD22F397F000AC96F8 /* ProfileDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileDetailViewController.m; sourceTree = "<group>"; };
+		624BBED922F35738000A754A /* InstaProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		624BBEDC22F35738000A754A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		624BBEDD22F35738000A754A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		624BBEE322F35739000A754A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		624BBEE522F35742000A754A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		624BBEE822F35742000A754A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		624BBEEA22F35742000A754A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		624BBEEB22F35742000A754A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		624BBEF222F35B4F000A754A /* ProfileTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileTableViewController.h; sourceTree = "<group>"; };
+		624BBEF322F35B4F000A754A /* ProfileTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileTableViewController.m; sourceTree = "<group>"; };
+		624BBEFE22F36FA1000A754A /* UserProfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserProfile.h; sourceTree = "<group>"; };
+		624BBEFF22F36FA1000A754A /* UserProfile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserProfile.m; sourceTree = "<group>"; };
+		62508ECA22F8B0420038CF16 /* ProfileSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileSearchViewController.h; sourceTree = "<group>"; };
+		62508ECB22F8B0420038CF16 /* ProfileSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileSearchViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		624BBED622F35738000A754A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		624BBED022F35738000A754A = {
+			isa = PBXGroup;
+			children = (
+				624BBEDB22F35738000A754A /* InstaProfile */,
+				624BBEDA22F35738000A754A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		624BBEDA22F35738000A754A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				624BBED922F35738000A754A /* InstaProfile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		624BBEDB22F35738000A754A /* InstaProfile */ = {
+			isa = PBXGroup;
+			children = (
+				624BBEDC22F35738000A754A /* AppDelegate.h */,
+				62508ECA22F8B0420038CF16 /* ProfileSearchViewController.h */,
+				62508ECB22F8B0420038CF16 /* ProfileSearchViewController.m */,
+				624BBEDD22F35738000A754A /* AppDelegate.m */,
+				624BBEE222F35739000A754A /* Main.storyboard */,
+				624BBEE522F35742000A754A /* Assets.xcassets */,
+				624BBEE722F35742000A754A /* LaunchScreen.storyboard */,
+				624BBEEA22F35742000A754A /* Info.plist */,
+				624BBEEB22F35742000A754A /* main.m */,
+				624BBEF222F35B4F000A754A /* ProfileTableViewController.h */,
+				624BBEF322F35B4F000A754A /* ProfileTableViewController.m */,
+				620FD4CC22F397F000AC96F8 /* ProfileDetailViewController.h */,
+				620FD4CD22F397F000AC96F8 /* ProfileDetailViewController.m */,
+				624BBEFE22F36FA1000A754A /* UserProfile.h */,
+				624BBEFF22F36FA1000A754A /* UserProfile.m */,
+			);
+			path = InstaProfile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		624BBED822F35738000A754A /* InstaProfile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 624BBEEF22F35742000A754A /* Build configuration list for PBXNativeTarget "InstaProfile" */;
+			buildPhases = (
+				624BBED522F35738000A754A /* Sources */,
+				624BBED622F35738000A754A /* Frameworks */,
+				624BBED722F35738000A754A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstaProfile;
+			productName = InstaProfile;
+			productReference = 624BBED922F35738000A754A /* InstaProfile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		624BBED122F35738000A754A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = meliot;
+				TargetAttributes = {
+					624BBED822F35738000A754A = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 624BBED422F35738000A754A /* Build configuration list for PBXProject "InstaProfile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 624BBED022F35738000A754A;
+			productRefGroup = 624BBEDA22F35738000A754A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				624BBED822F35738000A754A /* InstaProfile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		624BBED722F35738000A754A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624BBEE922F35742000A754A /* LaunchScreen.storyboard in Resources */,
+				624BBEE622F35742000A754A /* Assets.xcassets in Resources */,
+				624BBEE422F35739000A754A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		624BBED522F35738000A754A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62508ECC22F8B0420038CF16 /* ProfileSearchViewController.m in Sources */,
+				624BBEEC22F35742000A754A /* main.m in Sources */,
+				624BBEDE22F35738000A754A /* AppDelegate.m in Sources */,
+				624BBEF422F35B4F000A754A /* ProfileTableViewController.m in Sources */,
+				620FD4CE22F397F000AC96F8 /* ProfileDetailViewController.m in Sources */,
+				624BBF0022F36FA1000A754A /* UserProfile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		624BBEE222F35739000A754A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				624BBEE322F35739000A754A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		624BBEE722F35742000A754A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				624BBEE822F35742000A754A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		624BBEED22F35742000A754A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		624BBEEE22F35742000A754A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		624BBEF022F35742000A754A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G6Q9554M9R;
+				INFOPLIST_FILE = InstaProfile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.meliot.InstaProfile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		624BBEF122F35742000A754A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G6Q9554M9R;
+				INFOPLIST_FILE = InstaProfile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.meliot.InstaProfile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		624BBED422F35738000A754A /* Build configuration list for PBXProject "InstaProfile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				624BBEED22F35742000A754A /* Debug */,
+				624BBEEE22F35742000A754A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		624BBEEF22F35742000A754A /* Build configuration list for PBXNativeTarget "InstaProfile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				624BBEF022F35742000A754A /* Debug */,
+				624BBEF122F35742000A754A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 624BBED122F35738000A754A /* Project object */;
+}
