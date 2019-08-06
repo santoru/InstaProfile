@@ -27,28 +27,16 @@
     
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
-
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    NSLog(@"SEE YA THERE");
     
     // Fetching the correct segue :)
     if ([[segue identifier] isEqualToString:@"searchProfileSegue"]) {
-        NSLog(@"AAAAA CHE BELLO");
-        [self.view endEditing:YES]; // FIXME: ?
-        //_usersData = [NSMutableArray array];
-        
+        [self.view endEditing:YES];
+
+        // Getting username and return alert if empty
         NSString *username = [_searchProfileField text];
         if ([username isEqual: @""]) {
             UIAlertController * alert = [UIAlertController
@@ -67,10 +55,9 @@
             
             [self presentViewController:alert animated:YES completion:nil];
         } else {
-            NSLog(@"Letta la stringa %@", username);
+            
+            // Searching profiles with this username
             NSString *searchUrl = [NSString stringWithFormat:@"https://www.instagram.com/web/search/topsearch/?&query=%@", username];
-            
-            
             NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
             [request setHTTPMethod:@"GET"];
             [request setURL:[NSURL URLWithString:searchUrl]];
@@ -81,16 +68,14 @@
                 NSError * _Nullable error) {
                   if (data == nil) {
                       NSLog(@"Nessun dato");
+                      // TODO: Implement printCannotLoad
                       //[self printCannotLoad];
                   } else {
                       self.profiles = [[NSMutableArray alloc] init];
                       [self parseProfiles:data];
                       ProfileTableViewController *tableViewController = [segue destinationViewController];
                       tableViewController.profiles = self.profiles;
-                      //NSLog(@"A: %d", [tableViewController.profiles count]);
-                      //NSLog(@"B: %d", [_profiles count]);
                       [tableViewController tocLoad];
-                      //NSLog(@"Just refreshed");
                   }
                   
               }] resume];
@@ -109,6 +94,7 @@
                  error:&error];
     
     if(error) {
+        // TODO: Implement printCannotLoad
         //[self printCannotLoad];
         NSLog(@"Nessun dato");
         //[self printCannotLoad];
@@ -143,6 +129,7 @@
         
     } else {
         NSLog(@"Nessun dato");
+        // TODO: Implement printCannotLoad
         //[self printCannotLoad];
     }
     
