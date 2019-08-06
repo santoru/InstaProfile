@@ -87,7 +87,6 @@
                       self.highResImage.clipsToBounds = YES;
                   });
                   self.fullResolutionURL = finalUrl;
-                  NSLog(@"High res image set.");
                   return;
               }
           }

@@ -109,11 +109,9 @@ const double USERLIST_SIZE = 20;
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    NSLog(@"SEE YA THERE");
     
     // Fetching the correct segue :)
     if ([[segue identifier] isEqualToString:@"showProfileSegue"]) {
-        NSLog(@"Corretto");
         ProfileDetailViewController *detailViewController = [segue destinationViewController];
         detailViewController.user = [_profiles objectAtIndex:[self.tableView indexPathForSelectedRow].row];
     }
