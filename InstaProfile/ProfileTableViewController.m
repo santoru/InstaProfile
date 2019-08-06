@@ -18,6 +18,7 @@ const double USERLIST_SIZE = 20;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBar.hidden = NO;
     self.navigationController.navigationBar.prefersLargeTitles = true;
     self.tableView.estimatedRowHeight = USERLIST_SIZE;
     

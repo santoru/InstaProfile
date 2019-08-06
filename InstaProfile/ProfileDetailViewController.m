@@ -20,10 +20,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    // UI tweaks
-    self.highResImage.layer.cornerRadius = self.highResImage.frame.size.width / 2;
-    self.highResImage.clipsToBounds = YES;
-    
     // Filling labels
     self.title = user.username;
     self.nameLabel.text = user.fullname;

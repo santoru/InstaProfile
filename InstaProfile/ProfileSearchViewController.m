@@ -17,11 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationController.navigationBar.hidden = YES;
+    
     _profiles = [[NSMutableArray alloc] init];
     
     _searchButton.layer.borderWidth = 1.5f;
     _searchButton.layer.borderColor = [UIColor blackColor].CGColor;
     _searchButton.layer.cornerRadius = 12.0f;
+    
 }
 
 /*
