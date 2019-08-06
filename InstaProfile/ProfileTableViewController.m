@@ -20,7 +20,7 @@ const double USERLIST_SIZE = 20;
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = NO;
     self.navigationController.navigationBar.prefersLargeTitles = true;
-    self.tableView.estimatedRowHeight = USERLIST_SIZE;
+    self.tableView.estimatedRowHeight = 80;
     
     
     
@@ -42,6 +42,10 @@ const double USERLIST_SIZE = 20;
     return [_profiles count];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 80;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomTableViewCell" owner:self options:nil];

@@ -20,6 +20,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    NSLog(@"Size of the image: %f", _highResImage.frame.size.width);
+    NSLog(@"Size of the image: %f", _highResImage.frame.size.height);
+    
+    //_highResImage.layer.cornerRadius =
+    //_highResImage.clipsToBounds = YES;
+    
     // Filling labels
     self.title = user.username;
     self.nameLabel.text = user.fullname;

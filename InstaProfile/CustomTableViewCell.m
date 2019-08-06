@@ -12,7 +12,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    
+    // Initialization code    
     _profileImageView.layer.cornerRadius = 30;
     _profileImageView.clipsToBounds = YES;
 }
