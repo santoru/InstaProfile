@@ -44,15 +44,14 @@ const double USERLIST_SIZE = 20;
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"profileCell" forIndexPath:indexPath];
+    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomTableViewCell" owner:self options:nil];
+    CustomTableViewCell *cell = [nib objectAtIndex:0];
     
     // Configure the cell...
     UserProfile *p = [_profiles objectAtIndex:indexPath.row];
-    cell.imageView.layer.cornerRadius = cell.imageView.frame.size.width/2;
-    cell.imageView.clipsToBounds = YES;
-    cell.textLabel.text = p.fullname;
-    cell.detailTextLabel.text = p.username;
-    cell.imageView.image = p.image;
+    cell.fullnameLabel.text = p.fullname;
+    cell.usernameLabel.text = p.username;
+    cell.profileImageView.image = p.image;
     
     return cell;
 }

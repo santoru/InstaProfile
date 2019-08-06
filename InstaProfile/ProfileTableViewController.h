@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UserProfile.h"
 #import "ProfileDetailViewController.h"
+#import "CustomTableViewCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
