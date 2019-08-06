@@ -1,7 +1,7 @@
 # InstaProfile
 This is my first application, developed with the intent to learn a bit more about Objective-C. 
 
-The application main goal is to access and download both instagram profile pictures and stories of users.
+The application main goal is to access and download high resolution instagram profile pictures of users.
 <p align="center"><img src="assets/img/InstaProfile.png" /></p>
 
 ### Screenshots

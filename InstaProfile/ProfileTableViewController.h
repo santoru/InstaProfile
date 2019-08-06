@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UserProfile.h"
 #import "ProfileDetailViewController.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 extern const double USERLIST_SIZE;

@@ -23,6 +23,8 @@ const double USERLIST_SIZE = 20;
     self.tableView.estimatedRowHeight = USERLIST_SIZE;
     
     
+    
+    //self.profileCellView.imageView.image = p.image;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -46,6 +48,8 @@ const double USERLIST_SIZE = 20;
     
     // Configure the cell...
     UserProfile *p = [_profiles objectAtIndex:indexPath.row];
+    cell.imageView.layer.cornerRadius = cell.imageView.frame.size.width/2;
+    cell.imageView.clipsToBounds = YES;
     cell.textLabel.text = p.fullname;
     cell.detailTextLabel.text = p.username;
     cell.imageView.image = p.image;
