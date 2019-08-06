@@ -15,4 +15,5 @@ The application main goal is to access and download both instagram profile pictu
 ### Todo
 - Add some information about the user's profile on the profile view.
 - Find a way to fetch stories of the user (external api's maybe?) and dispaly/download them.
-
+- Check if there is an active internet connection
+- Implement a syncronious GET request and display a loading spinner
