@@ -20,26 +20,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSLog(@"Size of the image: %f", _highResImage.frame.size.width);
-    NSLog(@"Size of the image: %f", _highResImage.frame.size.height);
-    
-    //_highResImage.layer.cornerRadius =
-    //_highResImage.clipsToBounds = YES;
-    
     // Filling labels
     self.title = user.username;
     self.nameLabel.text = user.fullname;
     self.highResImage.image = user.image;
     self.biographyLabel.text = user.description;
-    
+    self.highResImage.layer.cornerRadius = (self.highResImage.frame.size.width - 40 )/2;
+    self.highResImage.clipsToBounds = YES;
     [self setHighResolutionImage:user.userid];
     self.biographyLabel.text = user.biography;
 }
 
 - (void) setHighResolutionImage:(NSString *)userid {
     // Thanks to: https://github.com/rarcega/instagram-scraper/issues/193
-    NSLog(@"Find high res picture for %@", userid);
-    
+
     NSString *url = [NSString stringWithFormat:@"https://i.instagram.com/api/v1/users/%@/info/", userid];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
@@ -50,7 +44,7 @@
       ^(NSData * _Nullable data,
         NSURLResponse * _Nullable response,
         NSError * _Nullable error) {
-          NSLog(@"Data: %@", data);
+          //NSLog(@"Data: %@", data);
           if (data == nil) {
               //[self printCannotLoad];
               NSLog(@"Error with data (is nil)");
@@ -72,14 +66,14 @@
                   
                   
                   // Setting HD image on ImageView
-                  NSLog(@"User: %@", userArray);
+                  //NSLog(@"User: %@", userArray);
                   NSArray *hdProfileInfo = [userArray valueForKey:@"hd_profile_pic_url_info"];
                   
                   NSString *finalUrl =[hdProfileInfo valueForKey:@"url"];
                   
                   // Updating biography label
                   NSString *biography = [userArray valueForKey:@"biography"];
-                  NSLog(@"BIO: %@", biography);
+
                   dispatch_async(dispatch_get_main_queue(), ^{
                       self.biographyLabel.text = biography;
                   });
@@ -89,6 +83,8 @@
                   self.user.image = image;
                   dispatch_async(dispatch_get_main_queue(), ^{
                       self.highResImage.image = image;
+                      self.highResImage.layer.cornerRadius = self.highResImage.frame.size.width/2;
+                      self.highResImage.clipsToBounds = YES;
                   });
                   self.fullResolutionURL = finalUrl;
                   NSLog(@"High res image set.");
