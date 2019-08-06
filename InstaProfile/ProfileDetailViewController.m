@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    
     // UI tweaks
     self.highResImage.layer.cornerRadius = self.highResImage.frame.size.width / 2;
     self.highResImage.clipsToBounds = YES;
@@ -67,7 +67,7 @@
                   // Getting user array with all data from "info" api.
                   NSArray *userArray = [object valueForKey:@"user"];
                   
-
+                  
                   
                   // Setting HD image on ImageView
                   NSLog(@"User: %@", userArray);
@@ -82,9 +82,7 @@
                       self.biographyLabel.text = biography;
                   });
                   self.user.biography = biography;
-
                   
-                  //NSLog(@"Final url: %@", finalUrl);
                   UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:finalUrl]]];
                   self.user.image = image;
                   dispatch_async(dispatch_get_main_queue(), ^{
@@ -99,14 +97,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 - (IBAction)clickDownloadButton:(UIButton *)sender {
     NSArray *shareItems = @[user.image];

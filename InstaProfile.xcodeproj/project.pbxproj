@@ -68,9 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				624BBEDC22F35738000A754A /* AppDelegate.h */,
+				624BBEDD22F35738000A754A /* AppDelegate.m */,
 				62508ECA22F8B0420038CF16 /* ProfileSearchViewController.h */,
 				62508ECB22F8B0420038CF16 /* ProfileSearchViewController.m */,
-				624BBEDD22F35738000A754A /* AppDelegate.m */,
 				624BBEE222F35739000A754A /* Main.storyboard */,
 				624BBEE522F35742000A754A /* Assets.xcassets */,
 				624BBEE722F35742000A754A /* LaunchScreen.storyboard */,

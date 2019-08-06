@@ -20,7 +20,7 @@
         self.fullname = fullname;
         self.username = username;
         self.image = image;
-
+        
     }
     
     return self;
