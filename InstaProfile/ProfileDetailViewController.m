@@ -66,28 +66,47 @@
                   
                   
                   // Setting HD image on ImageView
-                  //NSLog(@"User: %@", userArray);
+                  NSLog(@"User: %@", userArray);
                   NSArray *hdProfileInfo = [userArray valueForKey:@"hd_profile_pic_url_info"];
-                  
-                  NSString *finalUrl =[hdProfileInfo valueForKey:@"url"];
-                  
-                  // Updating biography label
-                  NSString *biography = [userArray valueForKey:@"biography"];
+                  if (hdProfileInfo == nil) {
+                      UIAlertController * alert = [UIAlertController
+                                                   alertControllerWithTitle:@"Ooops :("
+                                                   message:@"Impossible to fetch full resolution photo"
+                                                   preferredStyle:UIAlertControllerStyleAlert];
+                      
+                      UIAlertAction* okButton = [UIAlertAction
+                                                  actionWithTitle:@"Ok"
+                                                  style:UIAlertActionStyleCancel
+                                                  handler:^(UIAlertAction * action) {
+                                                      //Handle your button action here
+                                                  }];
+                      
+                      [alert addAction:okButton];
 
-                  dispatch_async(dispatch_get_main_queue(), ^{
-                      self.biographyLabel.text = biography;
-                  });
-                  self.user.biography = biography;
+                      [self presentViewController:alert animated:YES completion:nil];
+                  } else {
                   
-                  UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:finalUrl]]];
-                  self.user.image = image;
-                  dispatch_async(dispatch_get_main_queue(), ^{
-                      self.highResImage.image = image;
-                      self.highResImage.layer.cornerRadius = self.highResImage.frame.size.width/2;
-                      self.highResImage.clipsToBounds = YES;
-                  });
-                  self.fullResolutionURL = finalUrl;
-                  return;
+                      NSString *finalUrl =[hdProfileInfo valueForKey:@"url"];
+                      NSLog(@"FINAL URL: %@", finalUrl);
+                      // Updating biography label
+                      NSString *biography = [userArray valueForKey:@"biography"];
+
+                      dispatch_async(dispatch_get_main_queue(), ^{
+                          self.biographyLabel.text = biography;
+                      });
+                      
+                      self.user.biography = biography;
+                  
+                      UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:finalUrl]]];
+                      self.user.image = image;
+                      dispatch_async(dispatch_get_main_queue(), ^{
+                          self.highResImage.image = image;
+                          self.highResImage.layer.cornerRadius = self.highResImage.frame.size.width/2;
+                          self.highResImage.clipsToBounds = YES;
+                      });
+                      self.fullResolutionURL = finalUrl;
+                  }
+                      return;
               }
           }
       }] resume];
